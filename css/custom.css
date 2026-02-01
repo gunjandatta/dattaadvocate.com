@@ -4,3 +4,84 @@
     justify-content: center;
     align-items: center;
 }
+
+/** Carousel */
+.carousel-container {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 20px;
+}
+
+.testimonial-card {
+    min-width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: inherit;
+    font-style: italic;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: #0d213a;
+    gap: 15px;
+}
+
+.user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    object-fit: cover;
+}
+
+.user-details h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.user-details p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #f4ca75;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: #0d213a;
+    width: 30px;
+    border-radius: 10px;
+}
