@@ -9,14 +9,16 @@
     {% include header.html %}
     {% include services.html %}
     {% comment %} Excluding porfolio template {% include portfolio_grid.html %} {% endcomment %}
-    {% include about.html %}
+    {% comment %} {% include about.html %} {% endcomment %}
     {% comment %} Excluding the Team template {% include team.html %} {% endcomment %}
-    {% include clients.html %}
+    {% include feedback-carousel.html %}
     {% include contact.html %}
+    {% include social.html %}
     {% include footer.html %}
     {% include modals.html %}
     {% include js.html %}
-    </body>
+
+  </body>
 
   {% include seo.html %}
 

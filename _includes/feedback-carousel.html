@@ -1,0 +1,28 @@
+<section id="feedback" class="bg-light-gray">
+    <h2 class="section-heading text-center">What Families Say and the Outcomes</h2>
+    <div class="carousel-container">
+        <div class="carousel-track" id="track">
+            {% for item in site.data.feedback %}
+            <div class="testimonial-card">
+                <p class="feedback-text">{{ item.message }}</p>
+                <div class="user-info">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div class="user-details">
+                        <h4>{{ item.name }}</h4>
+                        <p>{{ item.location }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="controls" id="controls">
+            <button class="dot active" onclick="goToSlide(0)"></button>
+            <button class="dot" onclick="goToSlide(1)"></button>
+            <button class="dot" onclick="goToSlide(2)"></button>
+        </div>
+    </div>
+</section>
